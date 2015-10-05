@@ -14,13 +14,13 @@ namespace TaxCalculator
         {
             string input;
 
+            do {
             Console.Write("\nIncome" +
                 "\nReset" +
                 "\nQuit" +
                 "\nInput: ");
             input = Console.ReadLine().ToLower();
-            do
-            {
+                    
                 switch (input)
                 {
                     case "income":
