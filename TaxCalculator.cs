@@ -14,6 +14,9 @@ namespace TaxCalculator
         {
             string input;
 
+            Console.WriteLine("\nWritten by Vincent Chui" +
+                "\nCIS 23 BCC Fall 2015");
+
             do {
             Console.Write("\nIncome" +
                 "\nReset" +
@@ -25,6 +28,7 @@ namespace TaxCalculator
                 {
                     case "income":
                         setIncome();
+                        getTR();
                         break;
                     case "reset":
                         resetIncome();
@@ -96,7 +100,65 @@ namespace TaxCalculator
 
             Console.WriteLine("\nIncome has been reset");
         }
-
-
     }
 }
+/*OUTPUT
+
+Written by Vincent Chui
+CIS 23 BCC Fall 2015
+
+Income
+Reset
+Quit
+Input: income
+
+Gross Income Amount: 100000
+
+GROSS INCOME: 100000
+TAX RATE: 0.2%
+TAX AMOUNT: 20000
+
+Income
+Reset
+Quit
+Input: reset
+
+Income has been reset
+
+Income
+Reset
+Quit
+Input: income
+
+Gross Income Amount: 200000
+
+GROSS INCOME: 200000
+TAX RATE: 0.3%
+TAX AMOUNT: 60000
+
+Income
+Reset
+Quit
+Input: reset
+
+Income has been reset
+
+Income
+Reset
+Quit
+Input: income
+
+Gross Income Amount: 500000
+
+GROSS INCOME: 500000
+TAX RATE: 0.4%
+TAX AMOUNT: 200000
+
+Income
+Reset
+Quit
+Input: quit
+
+Goodbye
+Press any key to continue . . .
+*/
